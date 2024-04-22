@@ -1,0 +1,76 @@
+.login-container {
+    font-family: Arial, sans-serif;
+    background-color: hsla(188, 51%, 9%, 0.904);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.login-form {
+    width: 400px;
+    background-color: hsla(188, 51%, 9%, 0.904);
+    padding: 20px;
+    border: 3px solid aqua;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: aqua;
+    font-size: 2em;
+}
+
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+.login-form .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: aqua;
+}
+
+.login-form .form-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-form .form-group button {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsla(188, 75%, 40%, 0.904);
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+.btn-login-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form .form-group button:hover {
+    background-color: hsla(188, 75%, 50%, 0.904);
+}
+
+.register-btn{
+    color: hsl(180, 100%, 50%);
+    font-weight: bold;
+}
+
+.register-btn:hover{
+    color: hsl(180, 100%, 40%);
+}

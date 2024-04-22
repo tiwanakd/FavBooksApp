@@ -1,0 +1,82 @@
+.card{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid hsla(0, 0%, 49%, 0.707);
+    box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.904);
+    width: 18rem;
+    display: flex;
+}
+.card-img-top{
+    max-height: 20em;
+    border: 3px solid black;
+}
+
+.card-title{
+    color: rgb(7, 195, 220);
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.book-info{
+    font-weight: bold;
+    margin: 0;
+}
+.book-fav{
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 50px;
+    background-color: hsla(118, 91%, 31%, 0.397);
+    box-shadow: 1px 1px 5px black;
+    font-weight: bold;
+}
+.book-fav:hover{
+    background-color: hsla(118, 91%, 45%, 0.397);
+}
+.btn-fav-div{
+    margin-top: 15px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.remove-fav{
+    color: white;
+    text-decoration: none;
+    padding: 7px 7px;
+    border-radius: 50px;
+    background-color: hsla(4, 87%, 46%, 0.847);
+    box-shadow: 1px 1px 5px black;
+    font-weight: bold;
+
+}
+.remove-fav:hover{
+    background-color: hsla(4, 87%, 36%, 0.847);
+}
+.remove-fav-div{
+    margin-top: 15px;
+    display: flex;
+}
+.card-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.btn-summary{
+    color: white;
+    text-decoration: none;
+    padding: 7px 7px;
+    border-radius: 50px;
+    background-color: hsla(188, 92%, 29%, 0.801);
+    box-shadow: 1px 1px 5px black;
+    font-weight: bold;
+}
+.btn-summary:hover{
+    background-color: hsla(188, 92%, 40%, 0.801);
+}
+

@@ -1,0 +1,28 @@
+.pagination {
+    margin-top: 25px;
+}
+
+.pagination .page-link {
+    background-color: hsla(188, 51%, 9%, 0.904);
+    color: whitesmoke;
+    border: 2px solid aqua;
+    border-radius: 4px;
+}
+
+.page-item.active .page-link{
+    background-color: hsl(184, 81%, 36%);
+    color: hsl(0, 14%, 93%);
+    font-weight: bold;
+}
+
+.page-item.disabled .page-link{
+    display: none;
+}
+
+.pagination .page-link:hover {
+    background-color: hsla(188, 51%, 30%, 0.904);
+}
+
+.page-item.active .page-link:hover{
+    background-color: hsl(184, 81%, 36%);
+}

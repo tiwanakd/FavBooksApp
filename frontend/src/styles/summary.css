@@ -1,0 +1,21 @@
+.modal-content {
+    background-color: hsla(196, 76%, 5%, 0.9);
+    color: white;
+  }
+
+.book-title{
+    color: hsl(180, 100%, 50%);
+    font-style: italic;
+    font-weight: bold;
+  }
+.summary-content{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.btn-close{
+    background-color: hsl(0, 100%, 50%);
+}
+#title-span{
+    font-size: 0.55em;
+}

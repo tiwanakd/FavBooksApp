@@ -1,0 +1,64 @@
+.navbar-light{
+    background-color: hsl(217, 90%, 19%);
+    box-shadow: 5px 5px 10px;
+}
+.navbar-brand{
+    color: aqua;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.nav-link{
+    color: hsl(180, 100%, 50%);
+}
+.nav-link:hover{
+    color: hsl(180, 100%, 30%);
+}
+.navbar-toggler{
+    background-color: aqua
+}
+.nav-active{
+    background-color: hsl(192, 69%, 51%);
+    border-radius: 5px;
+    padding: auto;
+    font-weight: bold;
+    color: black;
+}
+.nav-active:hover{
+    background-color: hsl(192, 69%, 60%);
+}
+.dropdown-menu-dark{
+    background-color: hsl(217, 90%, 19%);
+    border-radius: 10px;
+    border-color: aqua;
+}
+.dropdown-item{
+    color: aqua;
+}
+.nav-item:focus-within .drop-nav {
+    color: hsl(180, 100%, 35%);
+    
+}
+.book-icon{
+    font-size: 1.6em;
+    color: aqua
+}
+
+.login-btn-container{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: auto;
+}
+.login-btn{
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.1em;
+    border: 1px;
+    padding: 5px 5px; 
+    
+}
+.login-dropdown{
+    display: flex;
+}
