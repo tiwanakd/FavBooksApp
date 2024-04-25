@@ -1,0 +1,12 @@
+# squliteDB
+db.sqlite3
+
+# Docker
+.docker
+
+# Python
+backend/__pycache__/
+backend/*/__pycache__/
+app/*/*/__pycache__/
+app/*/*/*/__pycache__/
+

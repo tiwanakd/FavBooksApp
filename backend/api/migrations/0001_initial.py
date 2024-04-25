@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
                 ("author", models.CharField(max_length=100)),
                 ("genre", models.CharField(max_length=100)),
                 ("publication_year", models.IntegerField()),
-                ("coverURL", models.URLField()),
+                ("cover_url", models.URLField()),
             ],
         ),
     ]

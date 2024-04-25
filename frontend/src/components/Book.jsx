@@ -17,7 +17,7 @@ const Book = ({ book, addFavBook, isHome, removeFromFav }) => {
   return (
     <>
     <div className="card">
-        <img src={book.coverURL} alt="Book Image" className='card-img-top'/>
+        <img src={book.cover_url} alt="Book Image" className='card-img-top'/>
         <div className='card-body'>
             <h4 className='card-title'>{book.title}</h4>
             <p className='book-info'>Author: {book.author}</p>

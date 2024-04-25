@@ -19,7 +19,7 @@ class UserSerializer(serializers.ModelSerializer):
 class BookSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
-        fields = ["id", "title", "author", "genre", "publication_year", "coverURL"]
+        fields = ["id", "title", "author", "genre", "publication_year", "cover_url"]
 
 class FavoriteBooksSerializer(serializers.ModelSerializer):
     class Meta:

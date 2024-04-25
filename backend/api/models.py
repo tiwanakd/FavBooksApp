@@ -8,7 +8,7 @@ class Book(models.Model):
     author = models.CharField(max_length=100)
     genre = models.CharField(max_length=100)
     publication_year = models.IntegerField()
-    coverURL = models.URLField(max_length=200)
+    cover_url = models.URLField(max_length=200, null=True)
 
     def __str__(self):
         return self.title
