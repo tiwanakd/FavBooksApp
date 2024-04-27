@@ -9,13 +9,9 @@ from django.contrib.auth.models import User
 from django.db import IntegrityError
 from rest_framework.exceptions import APIException
 from openai import OpenAI, OpenAIError, AuthenticationError
-from dotenv import load_dotenv
-import os
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
 
-
-# Create your views here.
 
 class BookListView(generics.ListAPIView):
     serializer_class = BookSerializer
@@ -109,19 +105,15 @@ class BookSummaryView(APIView):
         return Response({"title": book.title, "summary": summary})
 
     def generate_summary(self, title):
-        load_dotenv()
-
         try:
-            openai_client = OpenAI(
-                api_key=os.getenv("OPENAI_API_KEY")
-            )
+            openai_client = OpenAI()
             #Intialize the query to the OpenAI API
             ai_summary = openai_client.chat.completions.create(
                 model='gpt-3.5-turbo',
                 messages=[
                     {"role": "system", "content": "You are a Librarian who has read a lot of books and \
                     who can provide summaries of books."},
-                    {"role": "user", "content": f"Give me a one-two line summary of book {title} and \
+                    {"role": "user", "content": f"Give me 2-3 line summary of book {title} and \
                     do not include the book name in summary"}
                     ]
                 )
@@ -137,7 +129,6 @@ class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
     def get_token(cls, user):
         token = super().get_token(user)
         token['first_name'] = user.first_name
-
         return token
 
 class CustomTokenObtainPairView(TokenObtainPairView):

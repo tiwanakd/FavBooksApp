@@ -9,5 +9,7 @@ backend/__pycache__/
 backend/*/__pycache__/
 app/*/*/__pycache__/
 app/*/*/*/__pycache__/
+
+#environment file
 .env
 
