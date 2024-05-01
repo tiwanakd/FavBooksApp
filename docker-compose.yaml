@@ -16,6 +16,7 @@ services:
   backend:
     build:
       context: ./backend
+      dockerfile: Dockerfile.prod
     container_name: backend_c
     # add python insertdatatodb.py - this sciprt inserts the initial data to postgres db 
     # python insertdatatodb.py should only be run once to avoid duplication of data in DB
