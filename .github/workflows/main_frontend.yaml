@@ -6,7 +6,7 @@ on:
     workflow_dispatch:
 env:
   AZURE_WEBAPP_NAME: favbooks   
-  AZURE_WEBAPP_PACKAGE_PATH: '.'      
+  AZURE_WEBAPP_PACKAGE_PATH: './frontend'      
   NODE_VERSION: '20'
   
 jobs:
@@ -28,6 +28,7 @@ jobs:
               working-directory: ./frontend
               run: |
                 npm install
+                npm run build --if-present
             
             - name: Upload artifact for deployment job
               uses: actions/upload-artifact@v3
