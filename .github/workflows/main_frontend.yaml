@@ -6,7 +6,7 @@ on:
     workflow_dispatch:
 env:
   AZURE_WEBAPP_NAME: favbooks   
-  AZURE_WEBAPP_PACKAGE_PATH: '/frontend'      
+  AZURE_WEBAPP_PACKAGE_PATH: './frontend'      
   NODE_VERSION: '20'
   
 jobs:
@@ -25,7 +25,7 @@ jobs:
               with:
                 node-version: ${{ env.NODE_VERSION }}
             - name: Install dependencies and build
-              working-directory: /frontend
+              working-directory: ./frontend
               run: |
                 npm install
                 npm run build --if-present
